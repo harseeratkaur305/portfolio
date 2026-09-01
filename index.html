@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO SECTION WITH SPLIT SLIDER -->
+  <div class="scroll-container">
+    <div class="split-slider" id="splitSlider">
+
+      <!-- BOTTOM LAYER (Dark Theme) -->
+      <div class="layer dark-layer">
+        <div class="layer-content">
+          <header class="navbar">
+            <div class="logo">Portfolio</div>
+            <button class="nav-btn">Connect</button>
+          </header>
+
+          <main class="hero">
+            <div class="vertical-tag">DESIGN / DETAILS / CODE</div>
+
+            <div class="hero-text-wrapper">
+              <div class="eyebrow">
+                <span class="dot">●</span> HELLO, I’M HARSEERAT. A –
+              </div>
+
+              <h1 class="main-title">
+                <span class="highlight-d">D</span>esigner who<br>
+                <span class="ticker-wrapper">
+                  <span class="ticker-text">
+                    <span>Builds</span>
+                    <span>Codes</span>
+                    <span>Solves</span>
+                    <span>Simplifies</span>
+                    <span>Builds</span>
+                  </span>
+                </span>
+              </h1>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- TOP LAYER (Red Theme) -->
+      <div class="layer red-layer" id="redLayer">
+        <div class="layer-content">
+          <header class="navbar">
+            <div class="logo">Portfolio</div>
+            <button class="nav-btn">Connect</button>
+          </header>
+
+          <main class="hero">
+            <div class="vertical-tag">DESIGN / DETAILS / CODE</div>
+
+            <div class="hero-text-wrapper">
+              <div class="eyebrow">
+                <span class="dot">●</span> HELLO, I’M HARSEERAT. A –
+              </div>
+
+              <h1 class="main-title">
+                <span class="highlight-d">D</span>esigner who<br>
+                <span class="ticker-wrapper">
+                  <span class="ticker-text">
+                    <span>Builds</span>
+                    <span>Codes</span>
+                    <span>Solves</span>
+                    <span>Simplifies</span>
+                    <span>Builds</span>
+                  </span>
+                </span>
+              </h1>
+            </div>
+          </main>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ABOUT / EXPERIENCE SECTION -->
+  <section class="about-section">
+    <div class="about-content">
+      <p class="intro-paragraph reveal-text">
+        I’m a second year college student who is passionate about design and development. With a decent foundation, I strive to create meaningful digital experiences that are both functional and aesthetically pleasing. My journey has been fueled by curiosity, creativity, and a relentless drive to learn and grow. I thrive on challenges that push me to think critically and innovate.
+      </p>
+
+      <h2 class="statement-quote reveal-text">
+        I believe every great design forms the basis for an even greater story and I’m here to keep writing mine.
+      </h2>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION (Green & Cream Organic Wave) -->
+  <section class="testimonials-section">
+    <!-- SVG WAVY TOP DIVIDER -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+        <path fill="#f7f3e9" d="M0,64L80,74.7C160,85,320,107,480,96C640,85,800,43,960,37.3C1120,32,1280,64,1360,80L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+      </svg>
+    </div>
+
+    <!-- BACKGROUND ILLUSTRATION OVERLAY -->
+    <div class="forest-bg-pattern"></div>
+
+    <div class="testimonials-content">
+      <div class="header-group">
+        <span class="section-badge">MEET THE TEAM</span>
+        <h2 class="section-title">In their words</h2>
+      </div>
+
+      <!-- CARDS CONTAINER -->
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="testimonial-card">
+          <div class="quote-icon">❞</div>
+          <p class="card-quote">
+            Greeting! I have supervised her work and let me tell you, she has been a fantastic member of our team, and I am certain she has a bright future ahead as she continues her professional journey.
+          </p>
+          <div class="author-info">
+            <h4 class="author-name">Bell - the ladybug</h4>
+            <p class="author-role">Creative director at wonderland</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card">
+          <div class="quote-icon">❞</div>
+          <p class="card-quote">
+            Ahoy! Pleased to meet you! I am the one who provides her with the emotional support she needs, it's a full time job! So about her - builds with a quite beautiful aesthetic that is delightful to interact with. She’s natural at tackling new tools and concepts with total fearlessness – an asset to any team!
+          </p>
+          <div class="author-info">
+            <h4 class="author-name">Pirate - the dog</h4>
+            <p class="author-role">CEO(Chief Emotional Officer)</p>
+          </div>
+        </div>
+      </div> <!-- Closing tag for cards-grid -->
+    </div> <!-- Closing tag for testimonials-content -->
+
+    <!-- PEEKING DOG ILLUSTRATION (ANCHORED TO SCREEN WINDOW CORNER) -->
+    <div class="peeking-dog-wrapper">
+      <img src="peeking_doggo.png" alt="Peeking Dog Illustration" class="peeking-dog-img">
+    </div>
+
+  </section>
+
+  <!-- LADYBUG CANVAS OVERLAY -->
+  <canvas id="trailCanvas"></canvas>
+
+  <!-- CONNECT MODAL POP-UP -->
+  <div class="modal-overlay" id="connectModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModal">&times;</button>
+      <h3 class="modal-title">Let's Connect!</h3>
+      <p class="modal-subtitle">Feel free to reach out for collaborations, opportunities, or just a friendly chat.</p>
+      
+      <div class="modal-links">
+        <a href="https://www.linkedin.com/in/harseerat-kaur-b16205272/" target="_blank" rel="noopener noreferrer" class="modal-link-btn linkedin-btn">
+          💼 LinkedIn Profile
+        </a>
+        <a href="https://github.com/harseeratkaur305" target="_blank" rel="noopener noreferrer" class="modal-link-btn github-btn">
+          💻 GitHub Profile
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
